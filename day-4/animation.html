@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: blue;
+        animation: boxAnimation 4s infinite linear;
+      }
+
+
+      @keyframes boxAnimation {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        25% {
+          transform: translateX(200px) translateY(100px);
+        }
+        50% {
+          transform: translateX(200px) translateY(200px);
+        }
+        75% {
+          transform: translateX(0) translateY(200px);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
