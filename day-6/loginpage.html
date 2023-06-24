@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        #CNAform {
+         box-shadow: 3px 3px 3px 3px grey;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color:darkcyan;
+            background-color:azure;
+        }
+
+        i.fa,
+        b {
+            color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12
+            col-sm-offset-3 col-sm-6
+            col-md-offset-4 col-md-4
+           col-lg-offset-4 col-lg-4" id="CNAform">
+                <h3 class="text-center">
+                    <i class="fa-solid fa-users"></i>Create New Account
+                    <hr>
+                </h3>
+                <div class="form-group"><b>First Name:</b>
+                    <div class="input-group"><span class="input-group-addon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" id="TexFirstName" placeholder="enter first name here " maxlength="20"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="form-group"><b>Last Name:</b>
+                    <div class="input-group"><span class="input-group-addon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" id="TexLastName" placeholder="enter last name here " maxlength="20"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="form-group"><b>Email Id:</b>
+                    <div class="input-group"><span class="input-group-addon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" id="TexEmailId" placeholder="enter Email Id here " maxlength="20"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <b><i class="fa fa-phone"></i> Contact No.:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">+91</span>
+                        <input type=" text" id="TxtContactNo" placeholder="Enter Contact no." maxlength="10"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="form-group"><b>Gender:</b>
+                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-male"></i>
+                            | <i class="fa fa-female"></i></span>
+                        <select name="" id="DDL_Gender" class="form-control">
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a class="btn btn-primary" id="BtnCreateNewAccount"><i style="color: azure;" class="fa fa-user-plus"></i>Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
