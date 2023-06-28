@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+});
+$("#b1").click(function(){
+    $("img").hide();
+  });
+  $("#b2").click(function(){
+    $("img").show();
+});
+ });
+    </script>
+</head>
+<body>
+    <p style="font-size: 50px;">Hello!!</p>
+    <p style="font-size: 50px;">i'm here!!</p><br>
+    <div  id=" img"><img src="https://tse3.mm.bing.net/th?id=OIP.qwkrFzRmDYbZyMjW5764xgHaKe&pid=Api&P=0&h=180" alt="" height="200px"></div>
+    <button id="hide">click here for hide para</button>
+    <button id="show"> click here for show para</button>
+    <button id="b1">hide image</button>
+    <button id="b2">show image</button>
+    
+</body>
+</html>
